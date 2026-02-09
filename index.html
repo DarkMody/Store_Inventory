@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" href="Icons/icons8-gpa-calculator-50.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Store Inventory</h1>
+    <div id="container">
+      <input type="text" placeholder="Name" id="name" />
+      <div id="money">
+        <input type="number" placeholder="Price" id="price" />
+        <input type="number" placeholder="Taxes" id="tax" />
+        <input type="number" placeholder="ADS" id="ads" />
+        <input type="number" placeholder="Discount" id="discount" />
+        <input type="number" placeholder="Total" id="total" disabled />
+      </div>
+      <input type="number" placeholder="Count" id="count" />
+      <input type="text" placeholder="Category" id="category" />
+      <button id="create">Create</button>
+      <button id="upd" style="display: none">Update</button>
+      <input type="text" placeholder="Search By Name" id="search" />
+      <div id="search-type">
+        <button class="active">Search By Name</button>
+        <button>Search By Category</button>
+      </div>
+      <button id="delete-all">Delete All</button>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 5%">ID</th>
+            <th style="width: 15%">Name</th>
+            <th style="width: 10%">Price</th>
+            <th style="width: 10%">Taxes</th>
+            <th style="width: 5%">ADS</th>
+            <th style="width: 10%">Discount</th>
+            <th style="width: 10%">Total</th>
+            <th style="width: 15%">Category</th>
+            <th style="width: 10%"></th>
+            <th style="width: 10%"></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --secondColor: #1abc9c;
+}
+body {
+  background-color: #1e272e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+#container {
+  width: 80%;
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+input {
+  background-color: black;
+  outline: none;
+  border: none;
+  height: 30px;
+  padding-left: 15px;
+  color: white;
+  border-radius: 1rem;
+  font-size: 16px;
+  transition: 0.5s;
+}
+input:focus {
+  border: 2px solid var(--secondColor);
+  scale: 1.05;
+}
+#container #money {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+#money input {
+  width: 100%;
+}
+button {
+  background-color: var(--secondColor);
+  border: 3px solid var(--secondColor);
+  height: 30px;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: transparent;
+}
+#container #search-type {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 30px;
+}
+/* To Delete Arrows In Count Input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+table {
+  /* background-color: red; */
+  text-align: center;
+}
+td,
+th {
+  padding: 5px;
+  border: 3px solid rgb(195, 195, 195);
+}
+.delete,
+.update {
+  width: 100%;
+}
+.active {
+  background-color: transparent;
+}
